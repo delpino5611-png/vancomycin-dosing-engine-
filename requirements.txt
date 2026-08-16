@@ -1,0 +1,9 @@
+jax==0.11.0
+jaxlib==0.11.0
+equinox==0.13.8
+tesseract-core==1.11.0
+tesseract-jax==0.4.1
+numpy==2.5.1
+scipy==1.18.0
+matplotlib==3.11.1
+typing_extensions==4.16.0
