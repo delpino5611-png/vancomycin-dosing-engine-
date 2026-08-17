@@ -208,4 +208,15 @@ All checks **PASS**; the 1-comp core stays the always-shippable entry.
 - `bayesian.py` — MAP-Bayesian individualization (formalized Phi; 1-comp + 4-param 2-comp)
 - `servers.py` — Docker-free server launch/teardown
 - `run_demo.py` — full verification + 3-patient demo
+- `recovery_experiment.py` — parameter-recovery validation (200 virtual patients; recovers Ke/V/AUC from 2 noisy levels, quantifies prior-vs-no-prior robustness)
 - `*/tesseract_config.yaml`, `*/tesseract_requirements.txt` — per-module packaging
+
+### Phenytoin generality demo (same engine, saturable Michaelis-Menten PK)
+
+- `phenytoin_pk/tesseract_api.py` — saturable (Michaelis-Menten) PK module: nonlinear ODE integrated with a fixed-step solver, in place of vanco's linear superposition
+- `phenytoin_loss/tesseract_api.py` — clinical loss on total serum level (10-20 mg/L target) in place of the AUC/MIC exposure ratio
+- `engine_phenytoin.py` — composition + gradient verification + regimen optimizer for phenytoin (reuses the shared physiology module, optimizer, and Bayesian fitter unchanged)
+- `guardrails_phenytoin.py` — discrete safety wrapper for phenytoin dosing
+- `servers_phenytoin.py` — Docker-free server launch/teardown for the phenytoin modules
+- `demo_phenytoin.py` — full phenytoin verification + normal/fast/slow-metabolizer demo + sparse-data individualization
+- `make_figure_phenytoin.py` — renders the saturable-PK figure

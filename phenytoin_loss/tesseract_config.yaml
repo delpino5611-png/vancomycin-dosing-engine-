@@ -1,0 +1,7 @@
+name: phenytoin_loss
+version: "1.0.0"
+description: |
+  Phenytoin Tesseract (generality demo) - exposure objective for a concentration
+  target (total level 10 to 20 mg/L). Smooth one-sided safety penalties. JAX.
+build_config:
+  target_platform: "native"

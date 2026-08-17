@@ -1,0 +1,8 @@
+name: phenytoin_pk
+version: "1.0.0"
+description: |
+  Phenytoin Tesseract (generality demo) - one-compartment IV with saturable
+  Michaelis-Menten elimination (nonlinear). Fixed-step RK4 to steady state.
+  Outputs SS conc curve, differentiable AUC24, peak, trough, cavg. JAX.
+build_config:
+  target_platform: "native"
