@@ -1,0 +1,7 @@
+name: vanco_pk
+version: "1.0.0"
+description: |
+  Vanco Tesseract #2 - one-compartment IV vancomycin, multi-dose superposition to
+  steady state. Outputs SS conc curve, differentiable AUC24, peak, trough. JAX.
+build_config:
+  target_platform: "native"

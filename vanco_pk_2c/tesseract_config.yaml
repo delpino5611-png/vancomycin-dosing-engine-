@@ -1,0 +1,8 @@
+name: vanco_pk_2c
+version: "1.0.0"
+description: |
+  Vanco Tesseract #2b (stretch) - TWO-compartment IV vancomycin, analytic
+  bi-exponential, multi-dose superposition to steady state. Same I/O contract as
+  vanco_pk (1-comp). Outputs SS conc curve, differentiable AUC24, peak, trough. JAX.
+build_config:
+  target_platform: "native"

@@ -1,0 +1,7 @@
+name: exposure_loss
+version: "1.0.0"
+description: |
+  Vanco Tesseract #3 - exposure objective: AUC24/MIC target loss with smooth
+  peak/trough safety penalties. The differentiable dosing objective. JAX.
+build_config:
+  target_platform: "native"

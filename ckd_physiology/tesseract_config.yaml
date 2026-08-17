@@ -1,0 +1,7 @@
+name: ckd_physiology
+version: "1.0.0"
+description: |
+  Vanco Tesseract #1 - CKD physiology: patient covariates -> vancomycin PK
+  parameters (Cockcroft-Gault CrCl on AdjBW -> Matzke Ke prior -> CL). JAX/differentiable.
+build_config:
+  target_platform: "native"
